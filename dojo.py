@@ -1,12 +1,11 @@
-def umAcem():
-	lista = []
-	lista = range(1, 101)
-	return lista
+def fizzbuzz(x):
+    if x % 15 == 0:
+        return 'FizzBuzz'
+    if x % 5 == 0:
+        return 'Buzz'
+    if x % 3 == 0:
+        return 'Fizz'
+    return x
 
-def getElement(lista):
-	for a in lista:
-		if(a%3 == 0): 
-			return "Fizz"
-		elif(a%5 ==0):
-			return "Buzz"
-
+def umACem():
+    map(fizzbuzz, range(1, 101))
